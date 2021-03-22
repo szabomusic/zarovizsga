@@ -1,0 +1,143 @@
+$backgroundColor: #22b573ff;
+$cardColorOne: #1c1717ff;
+$cardColorTwo: #f2f2f2ff;
+$yellowText: #e6a947ff;
+$whiteText: white;
+$titleText: #cbe7daff;
+$cardTextTwo:#5a6363ff;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $backgroundColor;
+}
+nav {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+    background: $cardColorOne;
+    border-radius: 50%;
+  
+  
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 15px;
+    gap: 5px;
+  }
+  
+  .burger-menu span {
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: $cardColorTwo;
+    border-radius: 1px;
+  }
+}
+h1{
+    letter-spacing: 5px;
+    text-align: center;
+    color: $whiteText;
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: 100;
+
+}
+.container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    h3{
+        color: $yellowText;
+        margin: 1.2rem;
+    }
+    p{
+        margin: 1.3rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    a{
+        color: $yellowText;
+        text-decoration:none;
+        
+    }
+    .scienceCard{
+        width: 350px;
+        height: 500px;
+        background: $cardColorOne;
+        color: $whiteText;
+        position: relative;
+        a{
+            position: absolute;
+            bottom: -40px;
+            font-weight: bold;
+        }
+        
+       
+    }
+    .natureCard{
+        margin: 2rem;
+        width: 350px;
+        height: 500px;
+        background: $cardColorTwo;
+        position: relative;
+        a{
+            position: absolute;
+            bottom: -40px;
+            font-weight: bold;
+        }
+    }
+    .videoCard{
+        width: 350px;
+        height: 500px;
+        background: $cardColorOne;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        position: relative;
+        .player{
+          
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        h3{
+           position: absolute;
+           left: 0;
+           bottom: 0;
+        }
+        a{
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    nav h1 {
+      text-align: start;
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+      margin-top: 1.15rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 5rem;
+    }
+
+  }
+  
+  
+  

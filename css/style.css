@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #22b573ff;
+}
+
+nav {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  background: #1c1717ff;
+  border-radius: 50%;
+}
+nav .burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 15px;
+  gap: 5px;
+}
+nav .burger-menu span {
+  display: block;
+  width: 40px;
+  height: 6px;
+  background: #f2f2f2ff;
+  border-radius: 1px;
+}
+
+h1 {
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-weight: 100;
+}
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container h3 {
+  color: #e6a947ff;
+  margin: 1.2rem;
+}
+.container p {
+  margin: 1.3rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.container a {
+  color: #e6a947ff;
+  text-decoration: none;
+}
+.container .scienceCard {
+  width: 350px;
+  height: 500px;
+  background: #1c1717ff;
+  color: white;
+  position: relative;
+}
+.container .scienceCard a {
+  position: absolute;
+  bottom: -40px;
+  font-weight: bold;
+}
+.container .natureCard {
+  margin: 2rem;
+  width: 350px;
+  height: 500px;
+  background: #f2f2f2ff;
+  position: relative;
+}
+.container .natureCard a {
+  position: absolute;
+  bottom: -40px;
+  font-weight: bold;
+}
+.container .videoCard {
+  width: 350px;
+  height: 500px;
+  background: #1c1717ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container .videoCard .player {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.container .videoCard h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.container .videoCard a {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  nav h1 {
+    text-align: start;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    margin-top: 1.15rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
